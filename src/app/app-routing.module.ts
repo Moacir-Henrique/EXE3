@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'calculo',
     pathMatch: 'full'
+  },
+  {
+    path: 'calculo',
+    loadChildren: () => import('./calculo/calculo.module').then( m => m.CalculoPageModule)
   },
 ];
 

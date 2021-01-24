@@ -13,8 +13,27 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    
+    <form (ngSubmit)="onVerificarClick()">
+      <IonList>
+        <IonItem>
+          <IonLabel>Input</IonLabel>
+          <IonInput></IonInput>
+        </IonItem>
+        <IonItem>
+          <IonLabel>Toggle</IonLabel>
+          <IonToggle slot="end"></IonToggle>
+        </IonItem>
+        <IonItem>
+          <IonLabel>Radio</IonLabel>
+          <IonRadio slot="end"></IonRadio>
+        </IonItem>
+        <IonItem>
+          <IonLabel>Checkbox</IonLabel>
+          <IonCheckbox slot="start" />
+        </IonItem>
+      </IonList>
+    </form>
   </div>
 </ion-content>
